@@ -55,11 +55,12 @@
                 <label class="form-label">下载节点</label>
                 <div class="form-control-wrap">
 		<select  type="text" v-model="set.input"  class="form-control">
-
+            <option value="">↓↓ 如需自定义请直接在下方填写资源链接 ↓↓</option></select>
+            <input style="" type="text" v-model="set.input" placeholder="下载链接" class="form-control" autocomplete="off">
         <optgroup label="运营商">
             <option value="https://www.cucloud.cn/templets/1/default/activity/images/coupon/coupon-dialog-bg-3.png">联通云</option>    
             <option value="https://ecloud.eos-guangzhou-1.cmecloud.cn/op-admin-app-manage/ecloud_1.8.1.ipa">移动云</option>        
-            <option value="https://sz.10000gd.tech:12348/shmfile/20">中国电信旗下</option>
+            <option value="https://vod-origin-rjzy.gdoss.xstore.ctyun.cn/07da9eb52ad948c7b58b760003c0006b.mp4">天翼云</option>
         </optgroup>
 
         <optgroup label="常用">
@@ -92,8 +93,7 @@
 			<option value="https://nj-us-ping.vultr.com/vultr.com.100MB.bin">Vultr 100M(纽约)</option>
         </optgroup>
 
-			<option value="">↓↓ 如需自定义请直接在下方填写资源链接 ↓↓</option></select>
-		    <input style="" type="text" v-model="set.input" placeholder="下载链接" class="form-control" autocomplete="off">
+
 				</div>
             </div>
             <div class="form-group">
