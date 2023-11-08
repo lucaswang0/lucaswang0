@@ -55,18 +55,19 @@
                 <label class="form-label">下载节点</label>
                 <div class="form-control-wrap">
 		<select  type="text" v-model="set.input"  class="form-control">
-            <option value="">↓↓ 如需自定义请直接在下方填写资源链接 ↓↓</option></select>
-            <input style="" type="text" v-model="set.input" placeholder="下载链接" class="form-control" autocomplete="off">
+
+        <option value="">↓↓ 如需自定义请直接在下方填写资源链接 ↓↓</option>
+
         <optgroup label="运营商">
             <option value="https://www.cucloud.cn/templets/1/default/activity/images/coupon/coupon-dialog-bg-3.png">联通云</option>    
             <option value="https://ecloud.eos-guangzhou-1.cmecloud.cn/op-admin-app-manage/ecloud_1.8.1.ipa">移动云</option>        
             <option value="https://vod-origin-rjzy.gdoss.xstore.ctyun.cn/07da9eb52ad948c7b58b760003c0006b.mp4">天翼云</option>
         </optgroup>
 
-        <optgroup label="常用">
+        <optgroup label="国内[CN]">
 			<option value="https://i0.hdslb.com/bfs/album/6a259a872289fbf56e61876c9b8870a9868325af.jpg" selected = "selected">B站非免流 [默认]</option>
 			<option value="https://img.alicdn.com/imgextra/i1/O1CN01xA4P9S1JsW2WEg0e1_!!6000000001084-2-tps-2880-560.png">阿里图片CDN域名加速</option>
-				<option value="https://game.gtimg.cn/images/nz/web202106/index/bc_part1.gif">腾讯游戏</option>
+			<option value="https://game.gtimg.cn/images/nz/web202106/index/bc_part1.gif">腾讯游戏</option>
 			<option value="https://i0.hdslb.com/bfs/album/6a259a872289fbf56e61876c9b8870a9868325af.jpg">B站图片（非免流）</option>
 			<option value="https://img10.360buyimg.com/live/jfs/t1/128947/12/26918/1361527/6260e71bE0ee85af5/ecaa17ea8dd3dddb.jpg">京东商城图片CDN服务</option>
 			<option value="https://x19.gdl.netease.com/MCLauncherTool_0.1.4.50447.exe">网易(阿里CDN)</option>
@@ -86,14 +87,15 @@
             <option value="https://speedtest1.online.sh.cn:8080/download?size=25000000&r=0.4505865076711628">Speedtest</option>
         </optgroup>
         
-        <optgroup label="全球[Global]">    
+        <optgroup label="国外[Global]">    
 			<option value="https://cachefly.cachefly.net/100mb.test" >Cachefly 100MB</option>
 			<option value="https://speed.cloudflare.com/__down?bytes=100000000">cloudflare 100MB</option>
 			<option value="https://sgp-ping.vultr.com/vultr.com.100MB.bin">Vultr 100M(新加坡)</option>
 			<option value="https://nj-us-ping.vultr.com/vultr.com.100MB.bin">Vultr 100M(纽约)</option>
         </optgroup>
 
-
+		</select>
+		    <input style="" type="text" v-model="set.input" placeholder="下载链接" class="form-control" autocomplete="off">
 				</div>
             </div>
             <div class="form-group">
